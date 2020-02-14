@@ -40,4 +40,5 @@ Try to write a command line game, which can be controlled with the commands `"up
 
 - write a message, if the input is wrong
 - if the character found the treasure, stop the program and write a victory-message
-- 
+- use shortcuts (like WASD, w for up, a for left, d for right, s for down) for moving
+    - check this [SO-answer](https://stackoverflow.com/a/12506613/5627010) for how to react to keystrokes

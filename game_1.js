@@ -15,17 +15,18 @@ function render(size) {
   }
   console.log(first_line);
   // render the area with left and right bounds:
-  for (let x = 0; x < size; x++) {
+  // first loop: loop for every row (y)
+  for (let y = 0; y < size; y++) {
     let line = "";
     line += "|";
-    for (let y = 0; y < size; y++) {
+    // second loop: loop for every column (x)
+    for (let x = 0; x < size; x++) {
       // print the actual area:
       line += " ";
     }
     line += "|";
     console.log(line);
   }
-
   let last_line = "";
   for (let i = 0; i < size + 2; i++) {
     last_line += "+";

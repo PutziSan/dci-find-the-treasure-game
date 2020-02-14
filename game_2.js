@@ -4,14 +4,13 @@
 // |  o |
 // |    |
 // ++++++
-
 function render(size, position_x, position_y, target_x, target_y) {
   let first_line = "";
   for (let i = 0; i < size + 2; i++) {
     first_line += "+";
   }
   console.log(first_line);
-  // render the area:
+  // render the area with left and right bounds:
   for (let x = 0; x < size; x++) {
     let line = "";
     line += "|";

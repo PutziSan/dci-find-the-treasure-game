@@ -14,11 +14,12 @@ function render(size) {
     first_line += "+";
   }
   console.log(first_line);
-
-  for (let i = 0; i < size; i++) {
+  // render the area with left and right bounds:
+  for (let x = 0; x < size; x++) {
     let line = "";
     line += "|";
-    for (let j = 0; j < size; j++) {
+    for (let y = 0; y < size; y++) {
+      // print the actual area:
       line += " ";
     }
     line += "|";

@@ -34,4 +34,10 @@ Try to write a command line game, which can be controlled with the commands `"up
 5. Create a new function `game_loop`, which asks the user what to do next (asking for user-input up, down, left, right)
    - use the [`readline`](https://nodejs.org/api/readline.html#readline_readline) function for getting user-input
 6. adapt your `game_loop`-function, to render first, then asking for user-input, and then process the action
+7. adapt your `game_loop`-function, so that it never stops
 
+## Possible improvements
+
+- write a message, if the input is wrong
+- if the character found the treasure, stop the program and write a victory-message
+- 

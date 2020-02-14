@@ -1,3 +1,4 @@
+// state of the program (state of the game)
 let size = 4;
 let position_x = 0;
 let position_y = 0;
@@ -10,7 +11,7 @@ function render() {
     first_line += "+";
   }
   console.log(first_line);
-  // render the area:
+  // render the area with left and right bounds:
   for (let x = 0; x < size; x++) {
     let line = "";
     line += "|";

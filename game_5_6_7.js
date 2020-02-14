@@ -67,7 +67,21 @@ function process_action(action) {
 }
 
 function game_loop() {
+  const readline = require("readline");
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
 
+  render();
+
+  rl.question("What to do next?", answer => {
+    process_action(answer);
+    // close the readline for now, because we will recreate it in the next loop:
+    rl.close();
+    // start again the loop:
+    game_loop();
+  });
 }
 
 game_loop();
